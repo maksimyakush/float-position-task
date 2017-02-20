@@ -1,0 +1,176 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	height: 2000px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+}
+
+p {
+	line-height: 14px;
+}
+
+.wrapper {
+	margin: 0 auto;
+	position: relative;
+	width: 523px;
+}
+
+.list {
+	width: 523px;
+	min-height: 747px;
+	border: 2px solid #000000;
+	margin-top: 200px;
+	position: absolute;
+}
+
+main {
+	padding: 35px 32px 0;
+}
+
+main h2 {
+	margin-bottom: 10px;
+	font-size: 24px;
+}
+
+/*Positioning of the lists and bookmarks*/
+
+.front {
+	background-color: #ebebeb;
+}
+
+.middle {
+	background-color: #cccccc;
+	top: 20px;
+	left: 20px;
+}
+
+.back {
+	background-color: #acacac;
+	top: 40px;
+	left: 40px;
+}
+
+.bookmark {
+	width: 111px;
+	height: 36px;
+	border-radius: 0 11px 11px 0;
+	border: 2px solid #000000;
+	position: absolute;
+}
+
+.outer {
+	background-color: #00aeef;
+	top: 40px;
+	right: -15px;
+}
+
+.inner {
+	background-color: #39b54a;
+	top: 40px;
+	right: -48px;
+}
+
+.current {
+	background-color: #f68e56;
+	top: 40px;
+	right: -81px;
+}
+
+/*Block article*/
+
+article {
+	margin-bottom: 14px;
+}
+
+article .image1 {
+	float: left;
+	margin-right: 21px;
+	padding-top:1px; 
+	width: 207px;
+	height: 111px;
+}
+
+article .image2 {
+	float: right;
+	padding-top: 1px; 
+	width: 140px;
+	height: 140px;
+	margin-left: 5px;
+	margin-top: 16px;
+}	
+
+article p:last-child  {
+	margin-top: 14px;
+}
+
+/*Block figure*/
+
+figcaption {
+	margin-bottom: 6px;
+	font-size: 18px;
+}
+
+figure img {
+	width:194px;
+	height: 89px;
+	margin-top:15px;
+}
+
+figure img:nth-child(2n) {
+	float: right;
+}
+
+/*Fixed block with icons*/
+
+.share {
+	width: 90px;
+	height: 70px;
+	border: 1px solid #362f2d;
+	background-color: #fbaf5d;
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	text-align: center;
+}
+
+.share p {
+	margin:8px 0 10px 0;
+	font-size: 16px;
+}
+
+.share img {
+	width: 21px;
+	height: 22px;
+}
+
+.share a {
+	display: inline-block;
+	margin: 0 2px;
+}
+
+/*Footer*/
+
+footer {
+	margin: 0 32px;
+}
+
+footer p {
+	font-size: 9px;
+	padding: 25px 9px 18px 10px;
+	text-align: center;
+}
+
+/*Clearfix*/
+
+article:after, figure:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
